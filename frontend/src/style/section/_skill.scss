@@ -1,0 +1,49 @@
+.skill-section {
+
+    h2 {
+        margin-bottom: 4rem;
+
+        font: {
+            size: 1.8rem;
+            weight: $tertiaryWeight;
+        }
+
+    }
+
+    .skill-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+        margin-bottom: 1rem;
+
+        .skill-item {
+            border-radius: 1.5rem;
+            background-color: $tertiaryColor;
+            box-shadow: 0 0 9px #6df1c3d5;
+            transition: all ease .3s;
+
+            .skill-text {
+                font: {
+                    size: 1.7rem;
+                    weight: $secondaryWeight;
+                }
+
+                color: #000000;
+                padding: 2rem;
+
+                &:hover {
+                    color: #ffffff;
+
+                }
+            }
+
+            &:hover {
+                background-color: $secondaryColor;
+
+            }
+
+        }
+    }
+}

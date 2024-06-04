@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: $secondaryWeight;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* -- Custom Scroll-bar -- */
+::-webkit-scrollbar {
+    width: .4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: $primaryColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #90ee90a5;
+    border-radius: .5rem;
+}
+
+
+/* -- Colors classes -- */
+
+.bg-primary {
+    background-color: $primaryColor;
+}
+
+.color-primary {
+    color: $secondaryColor;
+}
+
+.color-secondary {
+    color: $tertiaryColor;
+}
+
+/* -- Commonly used -- */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* -- Use for Active and InActive for cards section -- */
+
+.active {
+    border-left: .6rem solid;
+    border-color: $tertiaryColor;
+    color: $secondaryColor;
+    // margin-left: -3px;
+    background-color: #85efc327;
+    // border-radius: 0 1rem 1rem 0;
+}
+
+.inActive {
+    color: #fff;
+}
+
+/* -- Responsive View -- */
+
+@media screen and (max-width: 767.98px) {
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .active {
+        border-top: .6rem solid;
+        border-left: none;
+        border-color: $tertiaryColor;
+        // margin-top: -3px;
+        margin-left: 0;
+
+    }
+
+}

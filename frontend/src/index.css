@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Admin Customize Styling ---- */
+
+/* -- all Inputs for admin -- */
+
+.all-input{
+    height: 50px;
+    width: 100%;
+    padding-left: 1.5rem;
+    border: 1px solid rgb(12, 12, 12);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    background-color: #f1efef;
+}
+
+.all-input:focus{
+    outline: none;
+    border: 2px solid #6ff76fc5;
+    background-color: #fff;
+
+}
+
+/* -- Tabs -- */ 
+
+.ant-tabs .ant-tabs-tab-btn{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #000;
+    background-color: #90ee90;
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+    background: #90ee90;
+}
+
+.ant-form-vertical .ant-form-item-label>label{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}

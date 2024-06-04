@@ -1,0 +1,115 @@
+.contact-section {
+
+    .contact-box {
+        padding-top: 2rem;
+
+        display: grid;
+        place-items: center;
+        gap: 1rem;
+        grid-template-columns: auto auto;
+
+
+        .contact-left-item {
+            color: $secondaryColor;
+
+            .curly-bracket {
+                font-size: 3rem;
+                line-height: 3;
+
+            }
+
+            .contact-content {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding-left: 5rem;
+
+                .span-text {
+                    color: #ffffffe2 !important;
+                }
+
+                .content-text {
+                    font-size: 2rem;
+                    font-weight: $secondaryWeight;
+                }
+            }
+        }
+
+        .contact-right-item {
+            width: 100%;
+
+            .form-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                box-shadow: 0 0 8px #ffffff7e;
+                margin-bottom: 2rem;
+
+                .input-field {
+
+                    padding: 1.2rem;
+                    outline: none;
+                    border: none;
+                    font-size: 1.4rem;
+                }
+
+                .contact-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+        }
+
+    }
+}
+
+.ant-form-item {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 767.98px) {
+
+    .contact-section {
+
+        .contact-box {
+            grid-auto-flow: row;
+            grid-template-columns: auto;
+
+            .contact-right-item {
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+
+    .contact-section {
+
+        .contact-box {
+
+            .contact-left-item {
+
+                .curly-bracket {
+                    font-size: 2.5rem;
+
+                }
+
+                .contact-content {
+
+                    .content-text {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.social-section {
+    position: fixed;
+    bottom: 1rem;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+
+
+    .social-hr-line {
+        width: .3rem;
+        height: 20rem;
+        background-color: #2ffb5471;
+    }
+
+    .social-link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .social-link-item {
+            transition: all .3s ease;
+
+            .social-icon {
+                font-size: 3rem;
+
+            }
+
+            .MailFilled {
+                color: #D14836;
+            }
+
+            .GithubFilled {
+                color: #71f8a3ec;
+            }
+
+            .LinkedinFilled {
+                color: #0A66C2;
+            }
+
+            .InstagramFilled {
+                color: #DD2A7B;
+            }
+
+            .YoutubeFilled {
+                color: #ff0909f1;
+            }
+
+            .FacebookFilled {
+                color: #1877F2;
+            }
+
+            &:hover {
+                transform: scale(1.5);
+            }
+
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) {
+    .social-section {
+        position: static;
+
+        .social-hr-line {
+            display: none;
+        }
+
+        .social-link-box {
+            flex-direction: row;
+            margin-bottom: 2rem;
+
+            .social-link-item {
+                font-size: 4rem;
+            }
+
+        }
+    }
+}

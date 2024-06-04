@@ -1,0 +1,132 @@
+.card-box {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2rem;
+
+    .left-card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+        border-left: 0.2rem solid #56efd04e;
+        transition: all .4s ease;
+        overflow: auto;
+        scrollbar-width: none;
+        height: 220px;
+
+        .card-period-box {
+            cursor: pointer;
+
+            .card-period-text {
+                font-size: 2rem;
+                padding: 1.5rem 5rem;
+            }
+        }
+
+    }
+
+    .right-card-box {
+
+        .right-card-item {
+            display: grid;
+            grid-template-columns: 65% 35%;
+            gap: 2rem;
+
+            .right-card-item-content {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                .card-title-text {
+                    font-size: 2.5rem;
+                    color: $secondaryColor;
+                }
+
+                .card-subtitle-text {
+                    font-size: 2rem;
+                    color: $tertiaryColor;
+                }
+
+                .card-desc-text {
+                    font-size: 1.6rem;
+                    color: #fff;
+                }
+            }
+
+            .right-card-item-img {
+                width: 80%;
+
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+
+        }
+    }
+
+}
+
+/* -- Responsive View -- */
+
+@media screen and (max-width: 767.98px) {
+    .card-box {
+        grid-template-columns: 1fr;
+
+        .left-card-item {
+            width: 100%;
+            height: 100px;
+            flex-direction: row;
+            border-top: 0.2rem solid #fff;
+            border-left: none;
+        }
+
+        .right-card-box {
+            width: 100%;
+
+            .right-card-item {
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .card-box {
+
+
+
+        .left-card-item {
+            gap: 1.8rem;
+
+            .card-period-box {
+
+                .card-period-text {
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .right-card-box {
+
+            .right-card-item {
+                grid-template-columns: 1fr;
+                place-items: center;
+                grid-template-areas:
+                    "first"
+                    "second";
+
+
+                .right-card-item-content {
+                    grid-area: second;
+                }
+
+                .right-card-item-img {
+                    grid-area: first;
+                }
+            }
+        }
+    }
+}

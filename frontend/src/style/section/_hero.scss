@@ -1,0 +1,62 @@
+.hero-section {
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+
+
+        .hero-heading {
+            font-size: 7rem;
+        }
+
+        .hero-heading-h2 {
+            font-size: 6rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+
+        .hero-text {
+            font: {
+                size: 2.5rem;
+                weight: $secondaryWeight;
+            }
+
+        }
+
+        .hero-para {
+            font-size: 1.8rem;
+            // width: 60%;
+        }
+    }
+}
+
+/* -- Responsive View -- */
+
+
+@media screen and (max-width: 767.98px) {
+
+    .hero-section {
+
+        .hero-box {
+            .hero-heading {
+                font-size: 6rem;
+            }
+
+            .hero-text {
+                font: {
+                    size: 2.2rem;
+                }
+
+            }
+
+            .hero-para {
+                width: 100%;
+            }
+        }
+    }
+}

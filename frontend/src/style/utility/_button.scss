@@ -1,0 +1,37 @@
+.button {
+    padding: 1.6rem 3.2rem;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 1.5rem;
+
+    font: {
+        size: 2rem;
+    }
+}
+
+.buttonTwo {
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+    color: #fff;
+
+
+    font: {
+        size: 1.4rem;
+        weight: $secondaryWeight;
+    }
+}
+
+.primary-btn {
+    background-color: inherit;
+    border: 2px solid $tertiaryColor;
+    border-radius: .8rem;
+    transition: border .3s ease;
+    box-shadow: 0 0 8px #63dbb1af;
+
+
+    &:hover {
+        border: 2px solid $secondaryColor;
+        box-shadow: 0 0 8px #dba163af;
+
+    }
+}
