@@ -100,4 +100,23 @@ router.post("/update-skill", async (req, res) => {
   }
 });
 
+//-> Experience api (update-experience)
+router.post("update-experience", async (req, res) => {
+  try {
+    const exps = await Experience.findOneAndUpdate(
+      { _id: req.body._id },
+      req.body,
+      { new: true }
+    );
+
+    res.status(200).send({
+      data: exps,
+      success: true,
+      message: "Experince updated successfully",
+    });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
+
 module.exports = router;

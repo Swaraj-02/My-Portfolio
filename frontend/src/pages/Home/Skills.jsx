@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import SectionTitle from "../../components/SectionTitle";
+// import { FaReact } from "react-icons/fa6";
 
 const Skills = () => {
   const { portfolioData } = useSelector((state) => state.root);
@@ -20,6 +21,9 @@ const Skills = () => {
         <div className="skill-box">
           {skills.map((item, index) => (
             <div key={index} className="skill-item">
+              {/* <span>
+                <FaReact />
+              </span> */}
               <p className="skill-text">{item.name}</p>
             </div>
           ))}

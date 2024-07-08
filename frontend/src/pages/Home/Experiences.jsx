@@ -12,7 +12,7 @@ const Experiences = () => {
       <div className="container">
         <SectionTitle title="Experiences" />
       </div>
-      <Cards Items={Experiences} />
+      {Experiences && <Cards Items={Experiences} />}
     </section>
   );
 };

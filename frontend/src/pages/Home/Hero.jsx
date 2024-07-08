@@ -16,6 +16,13 @@ const Hero = () => {
 
   //need to work on apis and frontend design and download cv button
 
+  const handelDownloadCv = () => {
+    const googleDriveLink =
+      "https://drive.google.com/file/d/1ZVHnfLiN4bdoyRIKHslgG0NR3hdKtnhE/view?usp=sharing";
+
+    window.location.href = googleDriveLink;
+  };
+
   return (
     <section className="hero-section">
       <div className="container hero-box">
@@ -37,7 +44,11 @@ const Hero = () => {
           </span>
         </h2>
         <p className="hero-para">{description || ""}</p>
-        <Button title="Download Resume" styleClass="button primary-btn" />
+        <Button
+          title="Download Resume"
+          styleClass="button primary-btn"
+          onClick={handelDownloadCv}
+        />
       </div>
     </section>
   );
